@@ -81,7 +81,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   RichText(
                     textAlign: TextAlign.center,
                     text: TextSpan(
-                        text: 'X-',
+                        text: 'Chain',
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.w700,
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         ),
                         children: [
                           TextSpan(
-                            text: 'GUARD',
+                            text: 'rity',
                             style: TextStyle(color: Colors.black, fontSize: 30),
                           ),
                         ]),

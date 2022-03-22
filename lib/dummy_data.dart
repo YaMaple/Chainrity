@@ -3,30 +3,31 @@ import 'models/news.dart';
 const DUMMY_NEWS = const [
   News(
       index: 0,
-      title: 'Rubber tires start the price hike',
+      title: 'Martin Lewis gives Leeds Money Buddies charity £50,000 donation',
       content:
-          '''According to industry sources, recently, many tire companies have placed price increase notices until 2021. Shandong Jinyu Rubber has decided to adjust product prices starting in 2021, this time the increase is 2% to 3%. Chaoyang Huaxing Wanda Tire issued a price adjustment notification letter, increasing the company's inner tube price by 3 points and the pad belt by 5 points from the original price. Shandong Haoyu Rubber issued a price increase notice and adjusted the prices of the entire series of TBR products produced by 2%. In addition to major domestic tire manufacturers, foreign tire companies such as Hankook, Giti, Goodyear, Bridgestone and other foreign tire companies have also begun to increase their prices, each with a cumulative price increase of more than 5%''',
-      imageUrl: 'assets/images/tyre.png'),
+          '''A debt charity has given "the biggest thank you" after a £50,000 donation from money expert Martin Lewis. Leeds Money Buddies responded to Mr Lewis on Twitter during a discussion about rising energy bills, describing the charity as at "breaking point". To the shock of the charity, Mr Lewis replied: "If I were to donate £50,000 today, would you be able to get things in place to relieve pressure at speed?"''',
+      imageUrl: 'assets/images/charity_1.jpeg'),
   News(
     index: 1,
-    title: 'Swiss aviation industry launches layoff plan',
+    title:
+        'Scots charity begins mission to rescue women and children in Ukraine',
     content:
-        '''On the 29th local time, Swissair’s chairman of the board of directors Reto Francini said that it is hoped that the aviation business volume in the summer of 2021 will reach 50% of the pre-epidemic volume. Whether intercontinental routes can be restored is critical to achieving this goal. If contrary to expectations, there is still no significant improvement next summer, layoffs will be unavoidable. Previously, Swissair had announced that it would lay off 1,000 employees within two years by freezing recruitment, adopting part-time work plans and early retirement of employees. Reto Francini also pointed out that there is little hope for the aviation industry to recover quickly, and it is expected that it will not be able to operate normally until 2024.''',
-    imageUrl: 'assets/images/swiss.jpg',
+        '''A Scottish aid charity is helping rescue hundreds of refugees from warn-torn Ukraine thanks to funds raised in an emergency appeal. Glasgow The Caring City has returned from four days in Poland, working with local partners to ensure donations help those who need it most. Now life-saving medical equipment has reached hospitals in the Ukraine as the charity has begun bringing bus loads of refugees across the border to Poland. Operations director Ross Galbraith travelled to the charity's hub in Wroclaw, Poland, to work alongside local aid groups and co-ordinators.''',
+    imageUrl: 'assets/images/charity_2.jpeg',
   ),
   News(
     index: 2,
-    title: 'Berlin' 's largest vaccination center temporarily closed',
-    imageUrl: 'assets/images/berlin.jpg',
+    title: 'Itch.io bundle just raised 6.3 million for humanitarian causes.',
+    imageUrl: 'assets/images/charity_3.jpeg',
     content:
-        '''The Berlin health department announced on the 29th local time that it will temporarily close Berlin Treptow from December 31 to January 3 because it prioritizes vaccinating high-risk groups through mobile work groups to elderly care institutions and hospitals. Vaccination center in gymnasium''',
+        '''Humble Bundle has put together a charity game bundle with all proceeds going to humanitarian crisis relief efforts in Ukraine. For a minimum donation of 40, you can pick up more than 120 games, books, apps, game asset packs and other goodies worth a total of over 2,500 through the Stand with Ukraine bundle. The bundle includes Back 4 Blood, Metro Exodus, Spyro Reignited Trilogy, Max Payne 3, Sunset Overdrive, PGA Tour 2K21, Brothers - A Tale of Two Sons and Superhot. You'll also get rulebooks for Pathfinder and Warhammer, one year of access to GameMaker Studio 2 Creator and a volume of the first six issues of graphic novel series The Boys (which Amazon turned into a Prime Video show). Creators on Itch.io also rallied to put together a bundle of almost 1,000 games, books, magazines, comics and game dev tools. The Bundle for Ukraine raised 6.3 million from almost 450,000 contributors.''',
   ),
   News(
     index: 3,
-    title: 'Samsung Electronics wants to dominate cutting-edge chipmaking',
-    imageUrl: 'assets/images/samsung.jpg',
+    title:
+        'Dumfries charity set to send convoy of vehicles loaded with donations to Ukraine',
+    imageUrl: 'assets/images/charity_4.jpeg',
     content:
-        '''Samsung electronics (se) is a behemoth. The South Korean tech company is the crown jewel of the mighty Samsung chaebol, as the country’s conglomerates are known. It makes more smartphones than any other company in the world, as well as home-entertainment systems and appliances. It dominates the manufacturing of memory chips, which are used to store data on electronic devices and whose price has been pushed up by the global semiconductor shortage. se’s annual revenues of 200bn are not much lower than those of Apple, the most valuable firm in history, and it is sitting on a cash pile of 100bn.
-Now both se and its parent group, whose name means “three stars”, are entering a critical new chapter. In August Lee Jae-yong, the scion of the family which founded Samsung in 1938, was released from prison, where he spent two stints after a conviction for his involvement in a bribery scandal. He is finally taking full control of the empire from his late father, Lee Kun-hee, who died last year. Succession was complicated first by the elder Lee’s six-year coma, then by his son’s bribery conviction, linked to se’s efforts to win the government’s backing for a merger of two Samsung subsidiaries that would cement his control.''',
+        '''Dumfries-based charity Massive Outpouring Of Love – D&G Refugee Action is sending a convoy of vehicles loaded with donated items for Ukraine on Tuesday. After a major appeal for gifted items the volunteers called a halt this week to goods donations while they worked to pack all the items they expect to send on the convoy. They have been given use of a depot at Marchmount Drive, by Dumfries and Galloway Council, for a month to sort and pack aid for the Ukrainian refugees in Europe. A spokesperson for the charity said that after attending a meeting of the UK refugee charities it was confirmed that “there is very little demand for clothing at present and there isn’t expected to be much for the foreseeable future”.''',
   ),
 ];

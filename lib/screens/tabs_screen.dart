@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_complete_guide/screens/easter_egg_screen.dart';
 import 'profile.dart';
 import '../widgets/main_drawer.dart';
-import 'algorithm_screen.dart';
 import '../models/news.dart';
 import 'watchlist_screen.dart';
 import 'news_screen.dart';
+import 'profile/profile.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<News> favoriteMeals = [];
@@ -33,8 +33,8 @@ class _TabsScreenState extends State<TabsScreen> {
         'title': 'Watch',
       },
       {
-        'page': EasterEggScreen(),
-        'title': 'Account',
+        'page': ProfilePage(),
+        'title': 'NFT',
       },
       {
         'page': ProfileScreen(),
