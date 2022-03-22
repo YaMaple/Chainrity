@@ -72,8 +72,8 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.star),
-            label: 'Watch',
+            icon: Icon(Icons.search),
+            label: 'Search',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
