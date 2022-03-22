@@ -13,7 +13,10 @@ class ProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: _buildAppBar(),
+      appBar: AppBar(
+        title: Text('NFT Market'),
+        backgroundColor: Color.fromARGB(0xff, 0x14, 0x27, 0x4e),
+      ),
       body: DefaultTabController(
         length: 2,
         child: NestedScrollView(
@@ -51,33 +54,6 @@ class ProfilePage extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
-  }
-
-  AppBar _buildAppBar() {
-    return AppBar(
-      elevation: 0,
-      backgroundColor: Colors.transparent,
-      leading: _buildIcon(
-        Icons.arrow_back_ios_outlined,
-      ),
-      actions: [
-        _buildIcon(
-          Icons.more_vert_outlined,
-        ),
-      ],
-    );
-  }
-
-  IconButton _buildIcon(IconData icon) {
-    return IconButton(
-      onPressed: () {},
-      splashRadius: 25,
-      icon: Icon(
-        icon,
-        color: Colors.black,
-        size: 20,
       ),
     );
   }

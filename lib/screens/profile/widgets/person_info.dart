@@ -14,6 +14,9 @@ class PersonInfo extends StatelessWidget {
       padding: const EdgeInsets.symmetric(horizontal: 25),
       child: Column(
         children: [
+          const SizedBox(
+            height: 20,
+          ),
           CircleAvatar(
             radius: 50,
             backgroundColor: Colors.transparent,

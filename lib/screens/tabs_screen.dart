@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/screens/easter_egg_screen.dart';
 import 'profile.dart';
 import '../widgets/main_drawer.dart';
 import '../models/news.dart';
-import 'watchlist_screen.dart';
 import 'news_screen.dart';
 import 'profile/profile.dart';
+import 'home_screen.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<News> favoriteMeals = [];
@@ -29,7 +28,7 @@ class _TabsScreenState extends State<TabsScreen> {
         'title': 'News',
       },
       {
-        'page': WatchListScreen(),
+        'page': HomeScreen(),
         'title': 'Watch',
       },
       {
@@ -78,8 +77,8 @@ class _TabsScreenState extends State<TabsScreen> {
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
-            icon: Icon(Icons.account_balance),
-            label: 'Account',
+            icon: Icon(Icons.nfc),
+            label: 'NFT',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
