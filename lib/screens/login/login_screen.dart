@@ -8,6 +8,8 @@ import 'signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
+import '../size_config.dart';
+
 class LoginScreen extends StatefulWidget {
   static const routeName = '/login';
   const LoginScreen({Key? key}) : super(key: key);
@@ -39,6 +41,8 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    SizeConfig().init(context);
+
     final height = MediaQuery.of(context).size.height;
     return Scaffold(
         body: Container(

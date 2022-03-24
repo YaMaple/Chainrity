@@ -5,6 +5,7 @@ import '../widgets/main_drawer.dart';
 import '../models/news.dart';
 import 'news_screen.dart';
 import 'profile/profile.dart';
+import 'iteams.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<News> favoriteMeals = [];
@@ -28,8 +29,8 @@ class _TabsScreenState extends State<TabsScreen> {
         'title': 'News',
       },
       {
-        'page': WatchListScreen(),
-        'title': 'Watch',
+        'page': Items(),
+        'title': 'Progress',
       },
       {
         'page': ProfilePage(),
