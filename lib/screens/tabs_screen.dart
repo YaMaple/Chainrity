@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_complete_guide/screens/watchlist_screen.dart';
 import 'profile.dart';
 import '../widgets/main_drawer.dart';
 import '../models/news.dart';
 import 'news_screen.dart';
 import 'profile/profile.dart';
-import 'home_screen.dart';
 
 class TabsScreen extends StatefulWidget {
   final List<News> favoriteMeals = [];
@@ -28,7 +28,7 @@ class _TabsScreenState extends State<TabsScreen> {
         'title': 'News',
       },
       {
-        'page': HomeScreen(),
+        'page': WatchListScreen(),
         'title': 'Watch',
       },
       {
@@ -73,7 +73,7 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
             icon: Icon(Icons.search),
-            label: 'Search',
+            label: 'Progress',
           ),
           BottomNavigationBarItem(
             backgroundColor: Theme.of(context).primaryColor,
