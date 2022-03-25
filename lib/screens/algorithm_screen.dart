@@ -46,6 +46,26 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
         "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
         "China"
       ],
+      [
+        'Come on, Mulan!',
+        '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
+        "2 March 2022",
+        "0.025",
+        "0x2fdfyvyshdjjhwgt8382uwh2922iuifxiu0wefiu",
+        "0xhuwuh2fuefh2hf2hh896448g8h02cnvnfeiruwii",
+        "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
+        "China"
+      ],
+      [
+        '\'Guangming\': Poverty alleviation project',
+        '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
+        "2 March 2022",
+        "0.025",
+        "0x2fdfyvyshdjjhwgt8382uwh2922iuifxiu0wefiu",
+        "0xhuwuh2fuefh2hf2hh896448g8h02cnvnfeiruwii",
+        "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
+        "China"
+      ],
     ];
 
     return Scaffold(

@@ -70,7 +70,7 @@ class _TabsScreenState extends State<TabsScreen> {
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 1, 146, 103),
             icon: Icon(Icons.search),
-            label: 'Progress',
+            label: 'Projects',
           ),
           BottomNavigationBarItem(
             backgroundColor: Color.fromARGB(255, 1, 146, 103),
