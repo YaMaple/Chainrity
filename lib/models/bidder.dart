@@ -9,25 +9,25 @@ class Bidder {
   });
   static List<Bidder> generateBidder() {
     return [
-      Bidder(name: 'Jenny', date: DateTime.now(), price: 1.53),
-      Bidder(name: 'Lucy', date: DateTime.now(), price: 1.51),
-      Bidder(name: 'William', date: DateTime.now(), price: 1.50),
-      Bidder(name: 'James', date: DateTime.now(), price: 1.49),
-      Bidder(name: 'Evelyn', date: DateTime.now(), price: 1.48),
-      Bidder(name: 'Harper', date: DateTime.now(), price: 1.47),
-      Bidder(name: 'Mason', date: DateTime.now(), price: 1.46),
+      Bidder(name: 'Jenny', date: DateTime.now(), price: 0.011),
+      Bidder(name: 'Lucy', date: DateTime.now(), price: 0.0115),
+      Bidder(name: 'William', date: DateTime.now(), price: 0.02),
+      Bidder(name: 'James', date: DateTime.now(), price: 0.016),
+      Bidder(name: 'Evelyn', date: DateTime.now(), price: 0.013),
+      Bidder(name: 'Harper', date: DateTime.now(), price: 0.0114),
+      Bidder(name: 'Mason', date: DateTime.now(), price: 0.0112),
     ];
   }
 
   static List<Bidder> generateHistory() {
     return [
-      Bidder(name: 'William', date: DateTime.now(), price: 1.50),
-      Bidder(name: 'James', date: DateTime.now(), price: 1.49),
-      Bidder(name: 'Evelyn', date: DateTime.now(), price: 1.48),
-      Bidder(name: 'Harper', date: DateTime.now(), price: 1.47),
-      Bidder(name: 'Ella', date: DateTime.now(), price: 1.45),
-      Bidder(name: 'Jackson', date: DateTime.now(), price: 1.44),
-      Bidder(name: 'Avery', date: DateTime.now(), price: 1.43),
+      Bidder(name: 'William', date: DateTime.now(), price: 0.02),
+      Bidder(name: 'James', date: DateTime.now(), price: 0.022),
+      Bidder(name: 'Evelyn', date: DateTime.now(), price: 0.021),
+      Bidder(name: 'Harper', date: DateTime.now(), price: 0.024),
+      Bidder(name: 'Ella', date: DateTime.now(), price: 0.019),
+      Bidder(name: 'Jackson', date: DateTime.now(), price: 0.0215),
+      Bidder(name: 'Avery', date: DateTime.now(), price: 0.023),
     ];
   }
 }

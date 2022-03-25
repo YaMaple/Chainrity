@@ -27,8 +27,6 @@ class _ItemsState extends State<Items> {
                 description: demoData[index]["description"],
                 image: demoData[index]["image"],
                 foodType: demoData[index]['foodType'],
-                price: demoData[index]["price"],
-                priceRange: demoData[index]["priceRange"],
                 press: () => Navigator.of(context)
                     .pushNamed('/algorithm', arguments: index),
               ),
@@ -57,14 +55,24 @@ final List<Tab> demoTabs = <Tab>[
   ),
 ];
 
-final List<Map<String, dynamic>> demoData = List.generate(
-  3,
-  (index) => {
-    "image": "assets/images/featured _items_${index + 1}.png",
-    "title": "Cookie Sandwich",
-    "description": "Shortbread, chocolate turtle cookies, and red velvet.",
-    "price": 7.4,
+final List<Map<String, dynamic>> demoData = [
+  {
+    "image": "assets/images/project_1.jpeg",
+    "title": "Star Baby",
+    "description": "Saving children with autism",
     "foodType": "Chinese",
-    "priceRange": "\$" * 2,
   },
-);
+  {
+    "image": "assets/images/project_2.jpeg",
+    "title": "Blood Disease Assistance",
+    "description":
+        "Poor children are eager for your help to raise treatment expenses",
+    "foodType": "Chinese",
+  },
+  {
+    "image": "assets/images/project_3.jpeg",
+    "title": "Caring For The Elderly",
+    "description": "Give empty-nest parents hope of love",
+    "foodType": "Chinese",
+  },
+];
