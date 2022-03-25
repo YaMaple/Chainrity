@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_complete_guide/screens/watchlist_screen.dart';
 import 'profile.dart';
-import '../widgets/main_drawer.dart';
 import '../models/news.dart';
 import 'news_screen.dart';
 import 'profile/profile.dart';
@@ -56,33 +54,31 @@ class _TabsScreenState extends State<TabsScreen> {
       // appBar: AppBar(
       //   title: Text(_pages[_selectedPageIndex]['title']),
       // ),
-      drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]['page'] as Widget,
       bottomNavigationBar: BottomNavigationBar(
         onTap: _selectPage,
-        backgroundColor: Theme.of(context).primaryColor,
         unselectedItemColor: Colors.white,
-        selectedItemColor: Colors.yellow[400],
+        selectedItemColor: Color.fromARGB(255, 253, 255, 109),
         currentIndex: _selectedPageIndex,
         // type: BottomNavigationBarType.fixed,
         items: [
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Color.fromARGB(255, 1, 146, 103),
             icon: Icon(Icons.article),
             label: 'News',
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Color.fromARGB(255, 1, 146, 103),
             icon: Icon(Icons.search),
             label: 'Progress',
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Color.fromARGB(255, 1, 146, 103),
             icon: Icon(Icons.nfc),
             label: 'NFT',
           ),
           BottomNavigationBarItem(
-            backgroundColor: Theme.of(context).primaryColor,
+            backgroundColor: Color.fromARGB(255, 1, 146, 103),
             icon: Icon(Icons.person),
             label: 'Me',
           ),

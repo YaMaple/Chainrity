@@ -44,7 +44,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         end: Alignment.bottomCenter,
                         colors: [
                           Color(0xffE6E6E6),
-                          Color(0xff14279B),
+                          Color.fromARGB(255, 56, 214, 16),
                         ],
                       ),
                     ),
@@ -67,7 +67,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xff14279B),
+                          color: Color.fromARGB(255, 56, 214, 16),
                         ),
                         children: [
                           TextSpan(
@@ -191,8 +191,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             begin: Alignment.centerLeft,
                             end: Alignment.centerRight,
                             colors: [
-                              Color(0xff14279B),
-                              Color(0xff14279B),
+                              Color.fromARGB(255, 56, 214, 16),
+                              Color.fromARGB(255, 56, 214, 16),
                             ],
                           ),
                         ),
@@ -205,7 +205,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     SizedBox(height: 10),
                     InkWell(
                       onTap: () {
-                        Navigator.push(
+                        Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(
                                 builder: (context) => LoginScreen()));
@@ -227,8 +227,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                             Text(
                               'Login',
                               style: TextStyle(
-                                  color: Color(0xff14279B),
-                                  fontSize: 13,
+                                  color: Color.fromARGB(255, 72, 114, 4),
+                                  fontSize: 14,
                                   fontWeight: FontWeight.w600),
                             ),
                           ],

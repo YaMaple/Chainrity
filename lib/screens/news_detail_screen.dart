@@ -39,7 +39,7 @@ class NewsDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(DUMMY_NEWS[newsId].title),
-        backgroundColor: Color.fromARGB(0xff, 0x14, 0x27, 0x4e),
+        backgroundColor: Color.fromARGB(255, 1, 146, 103),
       ),
       body: Container(
         padding: EdgeInsets.symmetric(horizontal: 18.0),

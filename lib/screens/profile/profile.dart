@@ -15,7 +15,7 @@ class ProfilePage extends StatelessWidget {
       backgroundColor: Colors.white,
       appBar: AppBar(
         title: Text('NFT Market'),
-        backgroundColor: Color.fromARGB(0xff, 0x14, 0x27, 0x4e),
+        backgroundColor: Color.fromARGB(255, 1, 146, 103),
       ),
       body: DefaultTabController(
         length: 2,

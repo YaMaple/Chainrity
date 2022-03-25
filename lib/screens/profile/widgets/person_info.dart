@@ -35,7 +35,7 @@ class PersonInfo extends StatelessWidget {
             profile.twitter!,
             style: const TextStyle(
               fontWeight: FontWeight.bold,
-              color: Colors.blue,
+              color: Color.fromARGB(255, 56, 214, 16),
               fontSize: 18,
             ),
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/iteam_card.dart';
 import 'constants_search.dart';
+import 'algorithm_screen.dart';
 
 class Items extends StatefulWidget {
   @override
@@ -10,40 +11,31 @@ class Items extends StatefulWidget {
 class _ItemsState extends State<Items> {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        DefaultTabController(
-          length: demoTabs.length,
-          child: TabBar(
-            isScrollable: true,
-            unselectedLabelColor: kMainColor.withOpacity(0.54),
-            labelStyle: kH3TextStyle,
-            onTap: (value) {
-              // you will get selected tab index
-            },
-            tabs: demoTabs,
-          ),
+    return Scaffold(
+        appBar: AppBar(
+          title: Text('News'),
+          backgroundColor: Color.fromARGB(255, 1, 146, 103),
         ),
-        // VerticalSpacing(),
-        ...List.generate(
-          demoData.length,
-          (index) => Padding(
-            padding: const EdgeInsets.symmetric(
-                horizontal: kDefaultPadding - 5, vertical: kDefaultPadding / 2),
-            child: ItemCard(
-              title: demoData[index]["title"],
-              description: demoData[index]["description"],
-              image: demoData[index]["image"],
-              foodType: demoData[index]['foodType'],
-              price: demoData[index]["price"],
-              priceRange: demoData[index]["priceRange"],
-              press: () => {},
-            ),
-          ),
-        ),
-      ],
-    );
+        body: ListView.builder(
+          itemBuilder: (ctx, index) {
+            return Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: kDefaultPadding - 5,
+                  vertical: kDefaultPadding / 2),
+              child: ItemCard(
+                title: demoData[index]["title"],
+                description: demoData[index]["description"],
+                image: demoData[index]["image"],
+                foodType: demoData[index]['foodType'],
+                price: demoData[index]["price"],
+                priceRange: demoData[index]["priceRange"],
+                press: () => Navigator.of(context)
+                    .pushNamed('/algorithm', arguments: index),
+              ),
+            );
+          },
+          itemCount: demoData.length,
+        ));
   }
 }
 

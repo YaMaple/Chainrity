@@ -81,6 +81,9 @@ flutter:
           weight: 300
         - asset: assets/fonts/RobotoCondensed-Italic.ttf
           style: italic
+    - family: SFProText
+      fonts:
+        - asset: assets/fonts/SFProText-Semibold.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

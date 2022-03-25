@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-const Color buttonColor = Color(0xFFE5C4D5);
+const Color buttonColor = Color.fromARGB(255, 1, 146, 103);
 
 const Color randomPink1 = Color(0xFFE5C4D5);
 const Color randomPink2 = Color(0xFFE2AFC9);

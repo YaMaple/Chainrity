@@ -66,7 +66,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       end: Alignment.bottomCenter,
                       colors: [
                         Color(0xffE6E6E6),
-                        Color(0xff14279B),
+                        Color.fromARGB(255, 56, 214, 16),
                       ],
                     ),
                   ),
@@ -89,7 +89,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         style: TextStyle(
                           fontSize: 30,
                           fontWeight: FontWeight.w700,
-                          color: Color(0xff14279B),
+                          color: Color.fromARGB(255, 56, 214, 16),
                         ),
                         children: [
                           TextSpan(
@@ -191,8 +191,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           begin: Alignment.centerLeft,
                           end: Alignment.centerRight,
                           colors: [
-                            Color(0xff14279B),
-                            Color(0xff14279B),
+                            Color.fromARGB(255, 56, 214, 16),
+                            Color.fromARGB(255, 56, 214, 16),
                           ],
                         ),
                       ),
@@ -213,12 +213,14 @@ class _LoginScreenState extends State<LoginScreen> {
                             )),
                         child: Text('Forgot Password ?',
                             style: TextStyle(
-                                fontSize: 14, fontWeight: FontWeight.w500)),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w600,
+                                color: Color.fromARGB(255, 72, 114, 4))),
                       )),
                   SizedBox(height: height * .055),
                   InkWell(
                     onTap: () {
-                      Navigator.push(
+                      Navigator.pushReplacement(
                           context,
                           MaterialPageRoute(
                               builder: (context) => SignUpScreen()));
@@ -233,7 +235,9 @@ class _LoginScreenState extends State<LoginScreen> {
                           Text(
                             'Don\'t have an account ?',
                             style: TextStyle(
-                                fontSize: 13, fontWeight: FontWeight.w600),
+                                fontSize: 14,
+                                fontWeight: FontWeight.w500,
+                                color: Color.fromARGB(255, 56, 214, 16)),
                           ),
                           SizedBox(
                             width: 10,
@@ -241,8 +245,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           Text(
                             'Register',
                             style: TextStyle(
-                                color: Color(0xff14279B),
-                                fontSize: 13,
+                                color: Color.fromARGB(255, 72, 114, 4),
+                                fontSize: 14,
                                 fontWeight: FontWeight.w600),
                           ),
                         ],
