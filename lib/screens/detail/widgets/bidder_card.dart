@@ -47,7 +47,7 @@ class BidderCard extends StatelessWidget {
           ],
         ),
         Text(
-          '${bidder.price} ETH',
+          '${bidder.price}',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 14,

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import '../models/iteam_card.dart';
 import 'constants_search.dart';
-import 'algorithm_screen.dart';
 
 class Items extends StatefulWidget {
   @override

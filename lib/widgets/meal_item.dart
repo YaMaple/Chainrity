@@ -63,7 +63,7 @@ class NewsItem extends StatelessWidget {
                   child: Text(
                     title,
                     style: TextStyle(
-                      fontSize: 26,
+                      fontSize: 20,
                       color: Colors.black,
                     ),
                     // softWrap: true,

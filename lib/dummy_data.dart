@@ -3,24 +3,43 @@ import 'models/news.dart';
 const DUMMY_NEWS = const [
   News(
       index: 0,
-      title: 'Martin Lewis gives Leeds Money Buddies charity £50,000 donation',
+      title: 'China Big Tech\'s Charitable Donations Are Hurting Their Stocks',
       content:
-          '''A debt charity has given "the biggest thank you" after a £50,000 donation from money expert Martin Lewis. Leeds Money Buddies responded to Mr Lewis on Twitter during a discussion about rising energy bills, describing the charity as at "breaking point". To the shock of the charity, Mr Lewis replied: "If I were to donate £50,000 today, would you be able to get things in place to relieve pressure at speed?"''',
-      imageUrl: 'assets/images/charity_1.jpeg'),
+          '''Chinese tech giants\' increasing charitable pledges may be contributing toward Xi Jinping\'s “common prosperity” vision, but they have also been costing investors.
+
+Stocks of all seven listed companies giving details of donations and pledges for various causes this year were sold off in the trading session following those moves, according to Bloomberg compiled data, which don\'t include pledging announcements that were clubbed with earnings releases.
+
+Alibaba Group Holding Ltd. was the latest Chinese tech company to pledge \$15.5 billion over five years on 10 initiatives encompassing technology investment and support for small companies, local media reported Thursday. Tencent Holdings Ltd. said last month it will double the money it\'s allocating for social responsibility programs to about \$15 billion.
+
+Chinese corporations and billionaires have pledged and directed more than \$37 billion to charity so far this year through corporate interests, foundations or personal wealth, data compiled by Bloomberg show.
+''',
+      imageUrl: 'assets/images/news_1.png'),
   News(
     index: 1,
-    title:
-        'Scots charity begins mission to rescue women and children in Ukraine',
+    title: 'Billionaire Donations Soar in China Push for \'Common Prosperity\'',
     content:
-        '''A Scottish aid charity is helping rescue hundreds of refugees from warn-torn Ukraine thanks to funds raised in an emergency appeal. Glasgow The Caring City has returned from four days in Poland, working with local partners to ensure donations help those who need it most. Now life-saving medical equipment has reached hospitals in the Ukraine as the charity has begun bringing bus loads of refugees across the border to Poland. Operations director Ross Galbraith travelled to the charity's hub in Wroclaw, Poland, to work alongside local aid groups and co-ordinators.''',
-    imageUrl: 'assets/images/charity_2.jpeg',
+        '''Seven Chinese billionaires have directed a record \$5 billion to charity so far this year, according to data compiled by Bloomberg News, a sum that exceeds by 20% total national giving in 2020. Their pledges, whether through corporate interests, foundations or personal wealth, arrive as President Xi Jinping pushes for \"common prosperity,\" a sprawling campaign to close the country\'s wealth gap.
+        
+Xi has emphasized wealth redistribution within China, referring to \"common prosperity\" goals at least 65 times in speeches and meetings this year, more than double the 30 mentions in all of last year.
+        
+It\'s not clear what all the policy implications of the campaign will include, but China has identified a \"third distribution of wealth\" -- individual giving and corporate philanthropy -- alongside government and market interventions.
+        
+In a high-level meeting chaired by Xi on Aug. 17, the government said it \"should reasonably adjust excessive incomes and encourage high-income people and companies to give back more to society.\" This idea of a \"social hand,\" according to state media, will rely on moral obligation and social expectation to inspire the country\'s richest to divest some of their personal wealth. ''',
+    imageUrl: 'assets/images/news_2.png',
   ),
   News(
     index: 2,
-    title: 'Itch.io bundle just raised 6.3 million for humanitarian causes.',
-    imageUrl: 'assets/images/charity_3.jpeg',
+    title:
+        'China\'s JD.com CEO joins billionaire charity rush with \$2.3 bln share pledge',
+    imageUrl: 'assets/images/news_3.png',
     content:
-        '''Humble Bundle has put together a charity game bundle with all proceeds going to humanitarian crisis relief efforts in Ukraine. For a minimum donation of 40, you can pick up more than 120 games, books, apps, game asset packs and other goodies worth a total of over 2,500 through the Stand with Ukraine bundle. The bundle includes Back 4 Blood, Metro Exodus, Spyro Reignited Trilogy, Max Payne 3, Sunset Overdrive, PGA Tour 2K21, Brothers - A Tale of Two Sons and Superhot. You'll also get rulebooks for Pathfinder and Warhammer, one year of access to GameMaker Studio 2 Creator and a volume of the first six issues of graphic novel series The Boys (which Amazon turned into a Prime Video show). Creators on Itch.io also rallied to put together a bundle of almost 1,000 games, books, magazines, comics and game dev tools. The Bundle for Ukraine raised 6.3 million from almost 450,000 contributors.''',
+        '''JD.com founder and CEO Richard Liu will donate company shares worth about \$2.34 billion to charity, the Chinese e-commerce giant said on Wednesday, adding to a list of similar philanthropic pledges from the country's top tech billionaires.
+
+The move comes as China tightens scrutiny on its tech sector, including JD.com and rival Alibaba Group Holding , as part of President Xi Jinping's "common prosperity" drive to ease inequality in the world's second-largest economy.
+
+Liu will give away about 62.4 million Class B ordinary JD shares, the company disclosed in a filing, without specifying the third-party foundation receiving the donation.
+
+American depository shares in JD, each representing two ordinary shares of the company, closed at \$75.08 on Tuesday and were last trading down nearly 1.9% on Wednesday.''',
   ),
   News(
     index: 3,

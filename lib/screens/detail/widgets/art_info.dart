@@ -32,10 +32,10 @@ class ArtInfo extends StatelessWidget {
               ),
               const SizedBox(width: 100),
               _buildIconText(
-                'assets/images/eth.png',
+                'assets/images/crypto.png',
                 8,
                 'Current bid',
-                '${art.price} ETH',
+                '${art.price}',
               ),
             ],
           ),
