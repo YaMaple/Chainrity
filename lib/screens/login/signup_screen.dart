@@ -143,8 +143,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                                 height: 10,
                               ),
                               TextField(
-                                  obscureText: true,
-                                  controller: passwordController,
+                                  obscureText: false,
+                                  // controller: passwordController,
                                   decoration: InputDecoration(
                                       border: InputBorder.none,
                                       fillColor: Color(0xfff3f3f4),
@@ -159,15 +159,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                     ),
                     GestureDetector(
                       onTap: () async {
-                        var url =
-                            Uri.parse('http://ftec5510.herokuapp.com/user');
-                        var response = await http.post(url, body: {
-                          'name': userController.text,
-                          'email': emailController.text,
-                          'password': passwordController.text,
-                          'bank': 'EMO Bank',
-                          'field': 'tech'
-                        });
                         Navigator.pushReplacement(
                             context,
                             MaterialPageRoute(

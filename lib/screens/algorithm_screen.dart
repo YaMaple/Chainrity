@@ -70,7 +70,7 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
 
     return Scaffold(
         appBar: AppBar(
-          title: Text("Project"),
+          title: Text("Detail"),
           backgroundColor: Color.fromARGB(255, 1, 146, 103),
         ),
         body: Padding(

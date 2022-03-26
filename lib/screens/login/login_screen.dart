@@ -138,8 +138,8 @@ class _LoginScreenState extends State<LoginScreen> {
                               height: 10,
                             ),
                             TextField(
-                                obscureText: true,
-                                controller: passwordController,
+                                //obscureText: true,
+                                // controller: passwordController,
                                 decoration: InputDecoration(
                                     border: InputBorder.none,
                                     fillColor: Color(0xfff3f3f4),
@@ -152,27 +152,11 @@ class _LoginScreenState extends State<LoginScreen> {
                   SizedBox(height: 20),
                   GestureDetector(
                     onTap: () async {
-                      final para = {
-                        'name': userController.text,
-                      };
-                      final uri =
-                          Uri.http('ftec5510.herokuapp.com', '/user', para);
-                      final response = await http.get(uri);
-                      if (response.statusCode == 404) {
-                        on_error();
-                      }
-                      final extractedData =
-                          json.decode(response.body) as Map<String, dynamic>;
-                      if (extractedData["password"] ==
-                          passwordController.text) {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => TabsScreen(),
-                            ));
-                      } else {
-                        on_error();
-                      }
+                      Navigator.pushReplacement(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => TabsScreen(),
+                          ));
                     },
                     child: Container(
                       width: MediaQuery.of(context).size.width,

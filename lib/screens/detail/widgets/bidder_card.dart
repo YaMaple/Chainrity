@@ -6,7 +6,9 @@ import 'package:intl/intl.dart';
 
 class BidderCard extends StatelessWidget {
   final Bidder bidder;
-  const BidderCard(this.bidder, {Key? key}) : super(key: key);
+  final VoidCallback press;
+  const BidderCard({required this.bidder, required this.press, Key? key})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -29,7 +31,7 @@ class BidderCard extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Bid placed by ${bidder.name}',
+                  '${bidder.name}',
                   style: const TextStyle(
                     fontWeight: FontWeight.bold,
                     fontSize: 16,
@@ -47,7 +49,7 @@ class BidderCard extends StatelessWidget {
           ],
         ),
         Text(
-          '${bidder.price}',
+          '${bidder.price} CNY',
           style: const TextStyle(
             fontWeight: FontWeight.bold,
             fontSize: 14,

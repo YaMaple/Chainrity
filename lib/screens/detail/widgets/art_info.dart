@@ -25,16 +25,16 @@ class ArtInfo extends StatelessWidget {
           Row(
             children: [
               _buildIconText(
-                profile.imgUrl!,
+                art.avatarUrl!,
                 0,
                 'Creator',
-                profile.twitter!.substring(1),
+                art.creator!,
               ),
-              const SizedBox(width: 100),
+              Spacer(),
               _buildIconText(
-                'assets/images/crypto.png',
+                'assets/images/Renminbi.png',
                 8,
-                'Current bid',
+                'Current price',
                 '${art.price}',
               ),
             ],

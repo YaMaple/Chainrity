@@ -10,14 +10,14 @@ import '../../screens/profile/widgets/tab_sliver_delegate.dart';
 class DetailPage extends StatelessWidget {
   final Art art;
   DetailPage(this.art, {Key? key}) : super(key: key);
-  final tabs = ['Info', 'Birds', 'History'];
+  final tabs = ['Prices'];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: DefaultTabController(
-          length: 3,
-          initialIndex: 1,
+          length: 1,
+          initialIndex: 0,
           child: NestedScrollView(
               headerSliverBuilder:
                   (BuildContext context, bool innerBoxIsScrolled) {
@@ -66,9 +66,7 @@ class DetailPage extends StatelessWidget {
               },
               body: TabBarView(
                 children: [
-                  ListView(children: const []),
-                  BidderList('birds', art.birds!),
-                  BidderList('history', art.history!),
+                  BidderList('Prices', art.birds!),
                 ],
               ))),
       floatingActionButton: const BuyButton(),

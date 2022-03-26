@@ -21,7 +21,12 @@ class _ItemsState extends State<Items> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: kDefaultPadding),
             child: TextFormField(
-              style: kSecondaryBodyTextStyle,
+              style: TextStyle(
+                fontSize: 17,
+                fontWeight: FontWeight.w500,
+                color: kMainColor,
+                // height: 1.5,
+              ),
               textInputAction: TextInputAction.search,
               decoration: InputDecoration(
                 enabledBorder: OutlineInputBorder(
@@ -62,7 +67,7 @@ class _ItemsState extends State<Items> {
                   image: demoData[index]["image"],
                   foodType: demoData[index]['foodType'],
                   press: () => Navigator.of(context)
-                      .pushNamed('/algorithm', arguments: index),
+                      .pushNamed('/easter_egg', arguments: index),
                 ),
               );
             },
@@ -71,24 +76,6 @@ class _ItemsState extends State<Items> {
         ]));
   }
 }
-
-final List<Tab> demoTabs = <Tab>[
-  Tab(
-    child: Text('Most Populars'),
-  ),
-  Tab(
-    child: Text('Beef & Lamb'),
-  ),
-  Tab(
-    child: Text('Seafood'),
-  ),
-  Tab(
-    child: Text('Appetizers'),
-  ),
-  Tab(
-    child: Text('Dim Sum'),
-  ),
-];
 
 final List<Map<String, dynamic>> demoData = [
   {

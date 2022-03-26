@@ -9,25 +9,29 @@ class Bidder {
   });
   static List<Bidder> generateBidder() {
     return [
-      Bidder(name: 'Jenny', date: DateTime.now(), price: 0.011),
-      Bidder(name: 'Lucy', date: DateTime.now(), price: 0.0115),
-      Bidder(name: 'William', date: DateTime.now(), price: 0.02),
-      Bidder(name: 'James', date: DateTime.now(), price: 0.016),
-      Bidder(name: 'Evelyn', date: DateTime.now(), price: 0.013),
-      Bidder(name: 'Harper', date: DateTime.now(), price: 0.0114),
-      Bidder(name: 'Mason', date: DateTime.now(), price: 0.0112),
+      Bidder(
+          name: 'J***y', date: DateTime.utc(2022, 3, 26, 12, 50), price: 110),
+      Bidder(name: 'L**y', date: DateTime.utc(2022, 3, 24, 10, 40), price: 103),
+      Bidder(
+          name: 'William', date: DateTime.utc(2022, 3, 22, 21, 20), price: 100),
+      Bidder(name: 'J***s', date: DateTime.utc(2022, 3, 20, 18, 15), price: 90),
+      Bidder(
+          name: 'Evelyn', date: DateTime.utc(2022, 3, 18, 16, 15), price: 70),
+      Bidder(
+          name: 'Harper', date: DateTime.utc(2022, 3, 14, 14, 10), price: 62),
+      Bidder(name: 'M***n', date: DateTime.utc(2022, 3, 10, 21, 55), price: 50),
     ];
   }
 
   static List<Bidder> generateHistory() {
     return [
-      Bidder(name: 'William', date: DateTime.now(), price: 0.02),
-      Bidder(name: 'James', date: DateTime.now(), price: 0.022),
-      Bidder(name: 'Evelyn', date: DateTime.now(), price: 0.021),
-      Bidder(name: 'Harper', date: DateTime.now(), price: 0.024),
-      Bidder(name: 'Ella', date: DateTime.now(), price: 0.019),
-      Bidder(name: 'Jackson', date: DateTime.now(), price: 0.0215),
-      Bidder(name: 'Avery', date: DateTime.now(), price: 0.023),
+      Bidder(name: 'Carlos', date: DateTime.utc(2022, 3, 24, 7, 45), price: 93),
+      Bidder(name: 'J***y', date: DateTime.utc(2022, 3, 21, 6, 35), price: 87),
+      Bidder(name: 'P***r', date: DateTime.utc(2022, 3, 19, 21, 50), price: 80),
+      Bidder(name: 'Jisoo', date: DateTime.utc(2022, 3, 15, 2, 10), price: 72),
+      Bidder(name: 'L**a', date: DateTime.utc(2022, 3, 12, 15, 40), price: 68),
+      Bidder(name: 'Jackson', date: DateTime.utc(2022, 3, 7, 1, 5), price: 63),
+      Bidder(name: 'Avery', date: DateTime.utc(2022, 3, 1, 13, 15), price: 60),
     ];
   }
 }

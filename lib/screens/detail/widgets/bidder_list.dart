@@ -13,7 +13,10 @@ class BidderList extends StatelessWidget {
     return ListView.separated(
         key: PageStorageKey(scrollKey),
         padding: const EdgeInsets.all(20),
-        itemBuilder: (_, index) => BidderCard(bidderList[index]),
+        itemBuilder: (_, index) => BidderCard(
+              bidder: bidderList[index],
+              press: () => {},
+            ),
         separatorBuilder: (_, index) => const SizedBox(height: 15),
         itemCount: bidderList.length);
   }
