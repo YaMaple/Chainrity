@@ -14,8 +14,7 @@ class BidderList extends StatelessWidget {
         key: PageStorageKey(scrollKey),
         padding: const EdgeInsets.all(20),
         itemBuilder: (_, index) => BidderCard(
-              bidder: bidderList[index],
-              press: () => {},
+              bidderList[index],
             ),
         separatorBuilder: (_, index) => const SizedBox(height: 15),
         itemCount: bidderList.length);

@@ -6,9 +6,7 @@ import 'package:intl/intl.dart';
 
 class BidderCard extends StatelessWidget {
   final Bidder bidder;
-  final VoidCallback press;
-  const BidderCard({required this.bidder, required this.press, Key? key})
-      : super(key: key);
+  const BidderCard(this.bidder, {Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

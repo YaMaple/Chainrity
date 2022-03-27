@@ -84,6 +84,9 @@ flutter:
     - family: SFProText
       fonts:
         - asset: assets/fonts/SFProText-Semibold.ttf
+    - family: Mono
+      fonts:
+        - asset: assets/fonts/Anonymous.ttf
   #   - family: Trajan Pro
   #     fonts:
   #       - asset: fonts/TrajanPro.ttf

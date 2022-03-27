@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'constants_search.dart';
 import 'size_config.dart';
+import 'dart:ui';
 
 class AlgorithmScreen extends StatefulWidget {
   static const routeName = '/algorithm';
@@ -18,12 +19,11 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
     const dataTable = [
       [
         'Star Baby',
-        '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
+        '0xf0b431d7afc79da9c9c43e8f763b196c',
         "24 March 2022",
-        "0.03",
-        "0x898bbb8718f0a1aa877b611dec152184bqfweqff",
-        "0xd8028a09ed7294ef8584adae55e401evjn900992",
-        "0x730944969b1cd148ed0dd9cea25c92dsfcue2323",
+        "400",
+        "0x4f2882c31293324351ee47bb025e6094",
+        "0x730944969b1cd148ed0dd9cea25c92ds",
         "China"
       ],
       [
@@ -31,7 +31,6 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
         '0xrba2d695eqaa1123plpkpk94t9889dfwewfwefpc',
         "21 March 2022",
         "0.02",
-        "0xfuiwehf37366fdiu267d67ff5d6d5df656fmnm12",
         "0xcbnb2iu2iu2i8909eriuu98334iu2n4nj2w88988",
         "0xlpzxcpz2mp4ip24575667cv6cv67cvq88sasd109",
         "China"
@@ -41,7 +40,6 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
         '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
         "2 March 2022",
         "0.025",
-        "0x2fdfyvyshdjjhwgt8382uwh2922iuifxiu0wefiu",
         "0xhuwuh2fuefh2hf2hh896448g8h02cnvnfeiruwii",
         "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
         "China"
@@ -51,7 +49,6 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
         '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
         "2 March 2022",
         "0.025",
-        "0x2fdfyvyshdjjhwgt8382uwh2922iuifxiu0wefiu",
         "0xhuwuh2fuefh2hf2hh896448g8h02cnvnfeiruwii",
         "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
         "China"
@@ -61,7 +58,6 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
         '0xdc25ef3f5b8a186998338a2ada83795fba2d695e',
         "2 March 2022",
         "0.025",
-        "0x2fdfyvyshdjjhwgt8382uwh2922iuifxiu0wefiu",
         "0xhuwuh2fuefh2hf2hh896448g8h02cnvnfeiruwii",
         "0x234cxzwefacvopo8f9977wiuefuhwhuefifuia97",
         "China"
@@ -92,17 +88,15 @@ class AlgorithmScreenState extends State<AlgorithmScreen> {
               NormalRow(text: "Transaction Amount"),
               NormalRow(text: dataTable[index][3]),
               VerticalSpacing(of: 40),
-              NormalRow(text: "Block ID"),
-              hashRow(text: dataTable[index][4]),
               VerticalSpacing(of: 10),
               NormalRow(text: "From"),
-              hashRow(text: dataTable[index][5]),
+              hashRow(text: dataTable[index][4]),
               VerticalSpacing(of: 10),
               NormalRow(text: "To"),
-              hashRow(text: dataTable[index][6]),
+              hashRow(text: dataTable[index][5]),
               VerticalSpacing(of: 10),
               NormalRow(text: "Region"),
-              NormalRow(text: dataTable[index][7])
+              NormalRow(text: dataTable[index][6])
             ],
           ),
         ));
@@ -115,21 +109,24 @@ Row NormalRow({required String text}) {
     children: [
       Text(
         text,
-        style: const TextStyle(color: Colors.black, fontFamily: "SFProText"),
+        style: const TextStyle(
+          color: Colors.black,
+          fontFamily: "SFProText",
+        ),
       ),
     ],
   );
 }
 
 Row hashRow({required String text}) {
-  return Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-    children: [
-      Text(
-        text,
-        style: TextStyle(
-            color: Colors.black, fontFamily: "SFProText", fontSize: 12),
-      )
-    ],
-  );
+  return Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
+    Text(
+      text,
+      style: TextStyle(
+        color: Colors.black,
+        fontFamily: "Mono",
+        fontSize: 13,
+      ),
+    ),
+  ]);
 }
